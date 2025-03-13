@@ -112,6 +112,39 @@
             }
         }
     });
+
+    
+     // Data di arrivo (14 Giugno 2025)
+     const countDownDate = new Date("Jun 14, 2025 00:00:00").getTime();
+
+     // Funzione per aggiornare il countdown ogni secondo
+     const x = setInterval(function() {
+         
+         // Ottieni la data e ora attuali
+         const now = new Date().getTime();
+         
+         // Calcola la distanza tra la data di arrivo e quella attuale
+         const distance = countDownDate - now;
+         
+         // Calcola i giorni, le ore, i minuti e i secondi rimanenti
+         const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+         const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+         const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+         const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+         
+         // Mostra i risultati nel countdown
+         document.getElementById("days").innerHTML = days;
+         document.getElementById("hours").innerHTML = hours;
+         document.getElementById("minutes").innerHTML = minutes;
+         document.getElementById("seconds").innerHTML = seconds;
+         
+         // Se il countdown è finito, mostra un messaggio
+         if (distance < 0) {
+             clearInterval(x);
+             document.querySelector(".special-day-container p").innerHTML = "Il grande giorno è arrivato!";
+             document.querySelector(".countdown").style.display = "none";
+         }
+     }, 1000);
     
 })(jQuery);
 

@@ -9762,3 +9762,42 @@ a.text-dark:hover, a.text-dark:focus {
     border-right: none !important;
   }
 }
+
+.page-wrapper {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;  
+}
+
+.special-day-container {
+  text-align: center;
+  background-color: #fff;
+  border-radius: 20px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  padding: 40px;
+  max-width: 400px;
+}
+
+.special-day-container p {
+  font-size: 1.5rem;
+  color: #4CAF50;
+  margin-bottom: 20px;
+}
+
+.countdown {
+  display: flex;
+  justify-content: space-around;
+  gap: 15px;
+}
+
+.countdown div {
+  background-color: #4CAF50;
+  color: #fff;
+  padding: 15px 20px;
+  border-radius: 12px;
+  font-size: 1.8rem;
+  width: 70px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+}
