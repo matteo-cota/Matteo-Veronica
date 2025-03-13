@@ -9769,6 +9769,7 @@ a.text-dark:hover, a.text-dark:focus {
   display: flex;
   justify-content: center;
   align-items: center;  
+  width: 100%;
 }
 
 .special-day-container {
@@ -9778,6 +9779,8 @@ a.text-dark:hover, a.text-dark:focus {
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
   padding: 40px;
   max-width: 400px;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .special-day-container p {
@@ -9788,8 +9791,9 @@ a.text-dark:hover, a.text-dark:focus {
 
 .countdown {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;  /* Centra il contenuto orizzontalmente */
   gap: 15px;
+  flex-wrap: nowrap;  /* Assicura che i numeri rimangano orizzontali */
 }
 
 .countdown div {
@@ -9800,4 +9804,45 @@ a.text-dark:hover, a.text-dark:focus {
   font-size: 1.8rem;
   width: 70px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+  display: flex;
+  justify-content: center;  /* Centra il numero */
+  align-items: center;      /* Centra il numero */
+}
+
+@media screen and (max-width: 768px) {
+  .special-day-container {
+    max-width: 90%;
+    padding: 30px;
+  }
+
+  .special-day-container p {
+    font-size: 1.2rem;
+  }
+
+  .countdown {
+    gap: 10px;  /* Riduce la distanza tra i blocchi */
+  }
+
+  .countdown div {
+    width: 60px;
+    font-size: 1.5rem;
+    padding: 12px 15px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .special-day-container {
+    max-width: 80%;
+    padding: 20px;
+  }
+
+  .special-day-container p {
+    font-size: 1rem;
+  }
+
+  .countdown div {
+    width: 50px;
+    font-size: 1.3rem;
+    padding: 10px 12px;
+  }
 }
