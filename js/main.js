@@ -152,40 +152,7 @@
             document.querySelector(".special-day-container p").innerHTML = "Il grande giorno è arrivato!";
             document.querySelector(".countdown").style.display = "none";
         }
-    }, 1000);
+    }, 1000);   
 
-    let heartCount = 0;  // Conta i cuori creati
-
-// Funzione per creare cuori
-function createHeart() {
-    if (heartCount >= 2) return;  // Limita a 5 cuori totali
-
-    const heart = document.createElement('div');
-    heart.classList.add('heart');
-    heart.textContent = '❤️';  // Cuore, puoi usare anche altri simboli
-
-    // Posizione casuale dei cuori
-    const xPosition = Math.random() * window.innerWidth; // Limita la posizione orizzontale alla larghezza della finestra
-    const yPosition = -50; // Posizione di partenza sopra la finestra
-
-    // Posizione iniziale dei cuori
-    heart.style.left = `${xPosition}px`;
-    heart.style.top = `${yPosition}px`;
-
-    // Aggiungi il cuore al contenitore
-    document.getElementById('hearts-container').appendChild(heart);
-
-    // Incrementa il contatore dei cuori
-    heartCount++;
-
-    // Rimuovi il cuore dopo che ha finito l'animazione (10s)
-    setTimeout(() => {
-        heart.remove();
-        heartCount--;  // Decrementa il contatore quando il cuore è rimosso
-    }, 8000);  // Tempo di durata dell'animazione (10 secondi)
-}
-
-// Crea un cuore ogni 2 secondi (aggiustato per un intervallo più lento)
-setInterval(createHeart, 2000);
 
 })(jQuery);

@@ -27,7 +27,7 @@
 </head>
 
 <body data-spy="scroll" data-target=".navbar" data-offset="51">
-    <div id="hearts-container"></div>
+    
     
     <!-- Inizio Navbar -->
     <nav class="navbar fixed-top shadow-sm navbar-expand-lg bg-dark navbar-dark py-3 py-lg-0 px-lg-5">
@@ -262,13 +262,21 @@
 </div>
 <!-- Fine Sezione Storia -->
 
-<!-- Inizio Sezione Galleria -->
-<div class="container-fluid bg-gallery" id="gallery" style="padding: 120px 0; margin: 90px 0;">
+<div class="container-fluid bg-gallery" id="gallery" style="position: relative; padding: 170px 0; margin: 90px 0;">
+    <!-- Video Background -->
+    <video autoplay loop muted playsinline class="bg-video">
+        <source src="/img/gallery.mp4" type="video/mp4">
+        Il tuo browser non supporta il tag video.
+    </video>
+
+    <div class="overlay"></div>
+
     <div class="section-title position-relative text-center" style="margin-bottom: 120px;">
         <h6 class="text-uppercase text-primary mb-3" style="letter-spacing: 3px;">Galleria</h6>
         <h1 class="font-secondary display-4 text-white">La Nostra Galleria Fotografica</h1>
         <i class="far fa-heart text-white"></i>
     </div>
+    
     <div class="owl-carousel gallery-carousel">
         <div class="gallery-item">
             <img class="img-fluid w-100" src="img/gallery-1.jpg" alt="">
@@ -282,8 +290,15 @@
                 <i class="fa fa-2x fa-plus text-white"></i>
             </a>
         </div>
+        <div class="gallery-item">
+            <img class="img-fluid w-100" src="img/gallery-3.jpg" alt="">
+            <a href="img/gallery-3.jpg" data-lightbox="gallery">
+                <i class="fa fa-2x fa-plus text-white"></i>
+            </a>
+        </div>
     </div>
 </div>
+
 <!-- Fine Sezione Galleria -->
 
 
@@ -310,7 +325,7 @@
                     <h4 class="mb-3">Matrimonio</h4>
                     <p class="mb-2"> In Comune</p>
                     <p class="mb-2"> Data</p>
-                    <p class="mb-2">Piazza Municipio, 71016 San Severo FG</p>
+                    <a href="https://maps.app.goo.gl/oyrYsWgXeXnFkB2D9" class="bottone mb-2">Piazza Municipio, 71016 San Severo FG</a> 
                     <p class="mb-0">00:00 - 00:00</p>
                 </div>
             </div>
@@ -320,7 +335,7 @@
                     <h4 class="mb-3">La Festa di Nozze</h4>
                     <p class="mb-2">Nome Ristorante</p>
                     <p class="mb-2"> Data</p>
-                    <p class="mb-2"> Via ...., ...., FG</p>
+                    <a href="https://maps.app.goo.gl/oyrYsWgXeXnFkB2D9" class="bottone mb-2">Piazza Municipio, 71016 San Severo FG</a>
                     <p class="mb-0">00:00 - 00:00</p>
                 </div>
             </div>
@@ -367,7 +382,6 @@
     </div>
 </footer>
 <!-- Footer Fine -->
-
 
 <!-- Scroll to Bottom -->
 <i class="fa fa-2x fa-angle-down text-white scroll-to-bottom"></i>
