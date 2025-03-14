@@ -157,7 +157,7 @@
             track.connect(audioContext.destination);
 
             // Volume iniziale basso
-            audio.volume = 0.1;
+            audio.volume = 0.3;
 
             // Ripristino del contesto audio e autoplay
             const tryAutoplay = () => {
@@ -176,6 +176,13 @@
             tryAutoplay();
             document.addEventListener('click', tryAutoplay); // Backup: Interazione utente se necessaria
         }
+
+        document.addEventListener('touchstart', function () {
+            audioContext.resume().then(() => {
+                audio.play();
+                console.log('Audio avviato su dispositivo mobile!');
+            });
+        }, { once: true });
     });
     
 })(jQuery);
