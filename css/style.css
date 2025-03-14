@@ -9847,37 +9847,48 @@ a.text-dark:hover, a.text-dark:focus {
   }
 }
 
+/* Styling generale per il player */
 .audio-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-  max-width: 600px;
-  margin: 20px auto;
-  background: #f7f7f7;
-  border-radius: 10px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 100%;
+    max-width: 404px;
+    margin: 0 auto;
+    padding: 15px;    
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    
+}
+
+
+.audio-container:hover {
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.audio {
+  width: 100%;
+  border-radius: 10px; 
   padding: 10px;
+  background: #fff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  outline: none;
+  transition: all 0.3s ease;
 }
 
-audio {
-  width: 100%;
-  max-width: 600px;
-  border-radius: 8px;
+.audio:hover {
+  background: #f1f1f1;
+  
 }
 
-.audio-overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.15);
-  border-radius: 10px;
-}
 
+
+/* Styling responsivo */
 @media (max-width: 768px) {
   .audio-container {
-      padding: 15px;
+      padding: 10px;
+      max-width: 100%;
+  }
+
+  .audio {
+      padding: 8px;
+      border-radius: 8px;
   }
 }

@@ -145,56 +145,7 @@
              document.querySelector(".countdown").style.display = "none";
          }
      }, 1000);
-
-
-     document.addEventListener('DOMContentLoaded', function () {
-        const audio = document.getElementById('background-music');
-
-        if (audio) {
-            // Verifica che il contesto audio venga correttamente ripreso
-            const audioContext = new (window.AudioContext || window.webkitAudioContext)();
-            const track = audioContext.createMediaElementSource(audio);
-            track.connect(audioContext.destination);
-
-            // Volume iniziale basso
-            audio.volume = 0.3;
-
-            // Ripristino del contesto audio e autoplay
-            const tryAutoplay = () => {
-                audioContext.resume().then(() => {
-                    audio.play().then(() => {
-                        console.log('Musica avviata automaticamente!');
-                    }).catch((err) => {
-                        console.warn('Autoplay bloccato, tentativo fallito:', err);
-                    });
-                }).catch(err => {
-                    console.error('Errore nel ripristino del contesto audio:', err);
-                });
-            };
-
-            // Prova autoplay subito e anche in caso di mancata inizializzazione
-            tryAutoplay();
-            document.addEventListener('click', tryAutoplay); // Backup: Interazione utente se necessaria
-        }       
-    });
-
-    document.addEventListener('touchstart', function () {
-        audioContext.resume().then(() => {
-            audio.play();
-            console.log('Audio avviato su dispositivo mobile!');
-        });
-    }, { once: true });
-
-    const tryPlayAgain = () => {
-        setTimeout(() => {
-            audioContext.resume().then(() => {
-                audio.play().catch(err => console.warn('Riproduzione ancora bloccata:', err));
-            });
-        }, 500); // Ritarda di 500ms
-    };
     
-    // Backup per tentare di riprodurre più volte
-    document.addEventListener('touchend', tryPlayAgain, { once: true });
     
 })(jQuery);
 
