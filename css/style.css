@@ -9789,11 +9789,13 @@ a.text-dark:hover, a.text-dark:focus {
   margin-bottom: 20px;
 }
 
+/* Styling principale per il countdown */
 .countdown {
   display: flex;
   justify-content: center;  /* Centra il contenuto orizzontalmente */
   gap: 15px;
   flex-wrap: nowrap;  /* Assicura che i numeri rimangano orizzontali */
+  margin-bottom: 20px; /* Aggiungi spazio tra il countdown e i numeri */
 }
 
 .countdown div {
@@ -9809,6 +9811,21 @@ a.text-dark:hover, a.text-dark:focus {
   align-items: center;      /* Centra il numero */
 }
 
+/* Centra i numeri delle etichette sotto il countdown */
+.countdown-numbers {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  margin-top: 10px;
+}
+
+.number-label {
+  font-size: 1.2rem;
+  color: #333;
+  font-weight: 600;
+}
+
+/* Styling responsivo */
 @media screen and (max-width: 768px) {
   .special-day-container {
     max-width: 90%;
@@ -9828,6 +9845,10 @@ a.text-dark:hover, a.text-dark:focus {
     font-size: 1.5rem;
     padding: 12px 15px;
   }
+
+  .countdown-numbers {
+    gap: 15px;  /* Riduce la distanza tra le etichette */
+  }
 }
 
 @media screen and (max-width: 480px) {
@@ -9845,8 +9866,15 @@ a.text-dark:hover, a.text-dark:focus {
     font-size: 1.3rem;
     padding: 10px 12px;
   }
-}
 
+  .countdown-numbers {
+    gap: 10px;  /* Ancora meno spazio tra le etichette per schermi più piccoli */
+  }
+
+  .number-label {
+    font-size: 1rem;
+  }
+}
 /* Styling generale per il player */
 .audio-container {
   width: 100%;
