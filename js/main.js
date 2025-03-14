@@ -175,15 +175,26 @@
             // Prova autoplay subito e anche in caso di mancata inizializzazione
             tryAutoplay();
             document.addEventListener('click', tryAutoplay); // Backup: Interazione utente se necessaria
-        }
-
-        document.addEventListener('touchstart', function () {
-            audioContext.resume().then(() => {
-                audio.play();
-                console.log('Audio avviato su dispositivo mobile!');
-            });
-        }, { once: true });
+        }       
     });
+
+    document.addEventListener('touchstart', function () {
+        audioContext.resume().then(() => {
+            audio.play();
+            console.log('Audio avviato su dispositivo mobile!');
+        });
+    }, { once: true });
+
+    const tryPlayAgain = () => {
+        setTimeout(() => {
+            audioContext.resume().then(() => {
+                audio.play().catch(err => console.warn('Riproduzione ancora bloccata:', err));
+            });
+        }, 500); // Ritarda di 500ms
+    };
+    
+    // Backup per tentare di riprodurre più volte
+    document.addEventListener('touchend', tryPlayAgain, { once: true });
     
 })(jQuery);
 
