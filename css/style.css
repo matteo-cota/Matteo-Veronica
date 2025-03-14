@@ -9913,31 +9913,30 @@ a.text-dark:hover, a.text-dark:focus {
 
 
 #hearts-container {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
   pointer-events: none;
-  z-index: 9999; /* Assicurati che i cuori siano sopra tutto il resto */
+  z-index: 9999;
+  overflow-x: hidden; /* Nasconde lo scroll orizzontale */
 }
 
+/* Stili per i cuori */
 .heart {
   position: absolute;
-  font-size: 3rem;
+  font-size: 2rem; /* Puoi variare la dimensione */
   color: red;
-  animation: moveHeart 3s linear infinite;
+  animation: fallHeart 10s linear infinite; /* Velocità più lenta */
 }
 
-/* Animazione per farli "muovere" un po' */
-@keyframes moveHeart {
+/* Animazione per i cuori che cadono */
+@keyframes fallHeart {
   0% {
-      transform: translateY(0) rotate(0deg);
-  }
-  50% {
-      transform: translateY(-100px) rotate(180deg);
+      transform: translateY(-100px); /* Partenza sopra la finestra */
   }
   100% {
-      transform: translateY(0) rotate(360deg);
+      transform: translateY(100vh); /* Arrivo alla parte inferiore della finestra */
   }
 }
