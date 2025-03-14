@@ -149,30 +149,32 @@
 
      document.addEventListener('DOMContentLoaded', function () {
         const audio = document.getElementById('background-music');
-        const playButton = document.getElementById('play-audio-btn');
-    
+
         if (audio) {
+            // Verifica che il contesto audio venga correttamente ripreso
             const audioContext = new (window.AudioContext || window.webkitAudioContext)();
             const track = audioContext.createMediaElementSource(audio);
             track.connect(audioContext.destination);
-    
+
             // Volume iniziale basso
             audio.volume = 0.1;
-    
-            // Tentativo di avviare l'audio automaticamente
-            audio.play().catch(() => {
-                console.warn('Autoplay bloccato: l’utente deve interagire.');
-                playButton.style.display = 'block';  // Mostra il pulsante per avviare l’audio
-            });
-    
-            // Avvia l'audio tramite interazione utente
-            playButton.addEventListener('click', () => {
+
+            // Ripristino del contesto audio e autoplay
+            const tryAutoplay = () => {
                 audioContext.resume().then(() => {
-                    audio.play();
-                    playButton.style.display = 'none'; // Nasconde il pulsante dopo l'interazione
-                    console.log('Audio avviato con successo!');
-                }).catch(err => console.error('Errore durante l’avvio dell’audio:', err));
-            });
+                    audio.play().then(() => {
+                        console.log('Musica avviata automaticamente!');
+                    }).catch((err) => {
+                        console.warn('Autoplay bloccato, tentativo fallito:', err);
+                    });
+                }).catch(err => {
+                    console.error('Errore nel ripristino del contesto audio:', err);
+                });
+            };
+
+            // Prova autoplay subito e anche in caso di mancata inizializzazione
+            tryAutoplay();
+            document.addEventListener('click', tryAutoplay); // Backup: Interazione utente se necessaria
         }
     });
     
