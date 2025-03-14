@@ -9847,6 +9847,8 @@ a.text-dark:hover, a.text-dark:focus {
   }
 
   .countdown-numbers {
+    display: flex;
+    justify-content: center;
     gap: 15px;  /* Riduce la distanza tra le etichette */
   }
 }
@@ -9868,6 +9870,8 @@ a.text-dark:hover, a.text-dark:focus {
   }
 
   .countdown-numbers {
+    display: flex;
+    justify-content: center;
     gap: 10px;  /* Ancora meno spazio tra le etichette per schermi più piccoli */
   }
 
