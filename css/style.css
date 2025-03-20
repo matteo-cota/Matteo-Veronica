@@ -9944,3 +9944,18 @@ a.text-dark:hover, a.text-dark:focus {
 
 }
 
+
+@media (max-width: 768px) {
+  .map-container {
+      height: 200px;
+      width: 250px;
+  }
+}
+
+@media (max-width: 480px) {
+  .map-container {
+      height: 150px;
+      width: 250px;
+  }
+}
+
