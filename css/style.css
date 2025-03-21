@@ -9738,7 +9738,7 @@ a.text-dark:hover, a.text-dark:focus {
 @media (max-width: 768px) {
   /* Video: Spostamento verso l'alto e dimensioni ottimizzate */
   .bg-video {
-      height: 87% !important;
+      height: 108% !important;
       width: 101% !important;
       position: absolute;
       top: -50px; /* Aumenta questo valore per spostare più in alto il video */
@@ -9980,4 +9980,4 @@ a.text-dark:hover, a.text-dark:focus {
       width: 300px;
   }
 }
-
+ 
