@@ -122,10 +122,10 @@
     </div>
     <!-- Fine Modal Video -->
     
-    <!-- Countdown -->
-    <div class="section-title position-relative text-center">                
+     <!-- Countdown -->
+     <div class="section-title position-relative text-center">                
         <h1 class="font-secondary display-4">Countdown</h1>
-        <i class="far fa-heart text-dark"></i>
+        <i class="far fa-heart text-primary fa-2x mt-2"></i>
     </div>
     <div class="page-wrapper">    
         <div class="special-day-container text-center">
@@ -148,65 +148,71 @@
         </div>
     </div>
     <!-- Fine Countdown -->
-
    
     
 
     <!-- Inizio Sezione Chi Siamo -->
-<div class="container-fluid py-5" id="about">
-    <div class="container py-5">
-        <div class="section-title position-relative text-center">
-            <h6 class="text-uppercase text-primary mb-3" style="letter-spacing: 3px;">La Nostra Storia</h6>
+<div class="container-fluid py-5 bg-light" id="about">
+    <div class="container py-5 text-center">
+        <!-- Titolo Sezione -->
+        <div class="section-title position-relative mb-5 ">
+            <h6 class="text-uppercase text-primary" style="letter-spacing: 3px;">La Nostra Storia</h6>
             <h1 class="font-secondary display-4">Un Amore Da Raccontare</h1>
-            <i class="far fa-heart text-dark"></i>
+            <!-- Icona Cuore migliorata leggermente -->
+            <div class="d-inline-block position-relative">
+                 <i class="far fa-heart text-primary fa-2x mt-2"></i>
+                 <!-- Potresti aggiungere un effetto di sfondo o bordo qui se vuoi -->
+            </div>
         </div>
 
-        <div class="row m-0 mb-4 mb-md-0 pb-md-0">
-            <div class="col-md-6 p-0 text-center text-md-right">
-                <div class="h-100 d-flex flex-column justify-content-center bg-secondary p-5">
-                    <h3 class="mb-3">Lo Sposo</h3>
-                    <p>
-                        Matteo è un sognatore con i piedi per terra, sempre pronto a far sorridere chi gli sta accanto. Ama la tecnologia, l'avventura e le piccole cose che rendono speciale ogni giornata. Con il cuore colmo di emozioni, non vede l'ora di iniziare questo nuovo capitolo con Veronica.
-                    </p>
-                    <h3 class="font-secondary font-weight-normal text-muted mb-3">
-                        <i class="fa fa-male text-primary pr-3"></i>Matteo
-                    </h3>
-                    <div class="position-relative">                        
-                        <a class="btn btn-outline-primary btn-square mr-1" href="https://www.instagram.com/matteocota/"><i class="fab fa-instagram"></i></a>
-                        <a class="btn btn-outline-primary btn-square mr-1" href="https://www.facebook.com/MatteoCotaOfficial/"><i class="fab fa-facebook-f"></i></a>
-                        <a class="btn btn-outline-primary btn-square mr-1" href="https://www.linkedin.com/in/matteo-cota/"><i class="fab fa-linkedin-in"></i></a>
+        <!-- Sezione Sposo e Sposa -->
+        <div class="row justify-content-center g-4">  <!-- g-4 aggiunge gutter (spazio) tra le colonne -->
+
+            <!-- Card Sposo -->
+            <div class="col-md-6 col-lg-5 d-flex"> <!-- Aggiunto col-lg-5 per controllo su schermi grandi e d-flex per card di altezza uguale (opzionale) -->
+                <div class="card shadow-sm border-0 rounded-3 h-100 w-100 couple-card"> <!-- Aggiunto shadow-sm, rimosso border, rounded-3, h-100 per altezza uguale con d-flex, w-100 -->
+                    <div class="card-body p-4 p-lg-5 text-center"> <!-- Più padding su schermi grandi -->
+                        <!-- Immagine Sposo (Sostituisci con l'URL reale) -->
+                        <!--<img src="https://via.placeholder.com/150" alt="Foto dello Sposo Matteo" class="img-fluid rounded-circle mb-4 profile-pic">-->
+
+                        <h3 class="mb-3">Lo Sposo</h3>
+                        <h4 class="font-secondary fw-normal text-muted mb-3"> <!-- Usato h4 invece di h3 per gerarchia, fw-normal -->
+                            <i class="fa fa-male text-primary pe-2"></i>Matteo <!-- Usato pe-2 invece di pr-2 in BS5 -->
+                        </h4>
+                        <p class="mb-4">Matteo è un sognatore con i piedi per terra, sempre pronto a far sorridere chi gli sta accanto. Ama la tecnologia, l'avventura e le piccole cose che rendono speciale ogni giornata. Con il cuore colmo di emozioni, non vede l'ora di iniziare questo nuovo capitolo con Veronica.</p>
+                        <div class="social-icons">
+                            <a class="btn btn-outline-primary btn-square mx-1" href="https://www.instagram.com/matteocota/" target="_blank" rel="noopener noreferrer" aria-label="Profilo Instagram Matteo"><i class="fab fa-instagram"></i></a>
+                            <a class="btn btn-outline-primary btn-square mx-1" href="https://www.facebook.com/MatteoCotaOfficial/" target="_blank" rel="noopener noreferrer" aria-label="Profilo Facebook Matteo"><i class="fab fa-facebook-f"></i></a>
+                            <a class="btn btn-outline-primary btn-square mx-1" href="https://www.linkedin.com/in/matteo-cota/" target="_blank" rel="noopener noreferrer" aria-label="Profilo LinkedIn Matteo"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="col-md-6 p-0" style="min-height: 480px;">
-                <img class="position-absolute w-100 h-100" src="img/matteo.png" style="object-fit: cover;">
-            </div>
-        </div>
 
-        <div class="row m-0">
-            <div class="col-md-6 p-0" style="min-height: 500px;">
-                <img class="position-absolute w-100 h-100" src="img/veronica.png" style="object-fit: cover;">
-            </div>
-            <div class="col-md-6 p-0 text-center text-md-left">
-                <div class="h-100 d-flex flex-column justify-content-center bg-secondary p-5">
-                    <h3 class="mb-3">La Sposa</h3>
-                    <p>
-                        Veronica è la luce che illumina ogni stanza in cui entra. Ama la natura, gli animali e la musica. Con un'anima gentile e un sorriso che conquista, ha rubato il cuore di Matteo fin dal primo incontro. Insieme, formano una squadra perfetta, pronta a costruire una vita piena d'amore e avventure.
-                    </p>
-                    <h3 class="font-secondary font-weight-normal text-muted mb-3">
-                        <i class="fa fa-female text-primary pr-3"></i>Veronica
-                    </h3>
-                    <div class="position-relative">
-                        <a class="btn btn-outline-primary btn-square mr-1" href="https://www.instagram.com/veronica.caputo/"><i class="fab fa-instagram"></i></a>
-                        <a class="btn btn-outline-primary btn-square mr-1" href="https://www.facebook.com/verity21"><i class="fab fa-facebook-f"></i></a>
-                        <a class="btn btn-outline-primary btn-square mr-1" href="https://www.linkedin.com/in/veronica-caputo-463b9b195/"><i class="fab fa-linkedin-in"></i></a>
+            <!-- Card Sposa -->
+             <div class="col-md-6 col-lg-5 d-flex"> <!-- Aggiunto col-lg-5 per controllo su schermi grandi e d-flex per card di altezza uguale (opzionale) -->
+                <div class="card shadow-sm border-0 rounded-3 h-100 w-100 couple-card"> <!-- Aggiunto shadow-sm, rimosso border, rounded-3, h-100 per altezza uguale con d-flex, w-100 -->
+                    <div class="card-body p-4 p-lg-5 text-center"> <!-- Più padding su schermi grandi -->
+                        <!-- Immagine Sposa (Sostituisci con l'URL reale) -->
+                        <!--<img src="https://via.placeholder.com/150" alt="Foto della Sposa Veronica" class="img-fluid rounded-circle mb-4 profile-pic">-->
+
+                        <h3 class="mb-3">La Sposa</h3>
+                        <h4 class="font-secondary fw-normal text-muted mb-3"> <!-- Usato h4 invece di h3 per gerarchia, fw-normal -->
+                            <i class="fa fa-female text-primary pe-2"></i>Veronica <!-- Usato pe-2 invece di pr-2 in BS5 -->
+                        </h4>
+                         <p class="mb-4">Veronica è la luce che illumina ogni stanza in cui entra. Ama la natura, gli animali e la musica. Con un'anima gentile e un sorriso che conquista, ha rubato il cuore di Matteo fin dal primo incontro. Insieme, formano una squadra perfetta, pronta a costruire una vita piena d'amore e avventure.</p>
+                        <div class="social-icons">
+                            <a class="btn btn-outline-primary btn-square mx-1" href="https://www.instagram.com/veronica.caputo/" target="_blank" rel="noopener noreferrer" aria-label="Profilo Instagram Veronica"><i class="fab fa-instagram"></i></a>
+                            <a class="btn btn-outline-primary btn-square mx-1" href="https://www.facebook.com/verity21" target="_blank" rel="noopener noreferrer" aria-label="Profilo Facebook Veronica"><i class="fab fa-facebook-f"></i></a>
+                            <a class="btn btn-outline-primary btn-square mx-1" href="https://www.linkedin.com/in/veronica-caputo-463b9b195/" target="_blank" rel="noopener noreferrer" aria-label="Profilo LinkedIn Veronica"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-
-        <div class="text-center mt-5">
-            <p class="lead">"L'amore è fatto di piccole cose che diventano grandi quando sono condivise con la persona giusta. <br>
+        <!-- Citazione -->
+        <div class="mt-5 pt-4 border-top"> <!-- Aggiunto margine superiore, padding e un bordo separatore -->
+            <p class="lead fst-italic ">"L'amore è fatto di piccole cose che diventano grandi quando sono condivise con la persona giusta. <br>
             Questo è solo l'inizio del nostro meraviglioso viaggio insieme." ❤️</p>
         </div>
     </div>
@@ -214,64 +220,67 @@
 <!-- Fine Sezione Chi Siamo -->
 
 
+
+
 <!-- Inizio Sezione Storia -->
-<div class="container-fluid" id="story">
-    <div class="container">
+<div class="container-fluid py-5" id="story"> <!-- Aggiunto py-5 -->
+    <div class="container pt-5 pb-3"> <!-- Aggiunto padding -->
         <div class="section-title position-relative text-center">
             <h6 class="text-uppercase text-primary mb-3" style="letter-spacing: 3px;">Storia</h6>
             <h1 class="font-secondary display-4">La Nostra Storia d'Amore</h1>
-            <i class="far fa-heart text-dark"></i>
+            <i class="fas fa-book-open text-primary fa-2x mt-2"></i> <!-- Icona libro -->
         </div>
-        <div class="container timeline position-relative p-0">
+        <div class="container timeline position-relative p-0 mt-5"> <!-- Aggiunto margine -->
+            <!-- Evento 1: Primo Incontro -->
             <div class="row">
                 <div class="col-md-6 text-center text-md-right">
-                    <img class="img-fluid mr-md-3" src="img/story-1.jpg" alt="">
+                    <!--<img class="img-fluid mr-md-3 rounded shadow-sm mb-3 mb-md-0" src="img/story-1.jpg" alt="Primo Incontro" loading="lazy"> <!-- Aggiunto src, alt, lazy loading, rounded, shadow -->
                 </div>
                 <div class="col-md-6 text-center text-md-left">
-                    <div class="h-100 d-flex flex-column justify-content-center bg-secondary p-4 ml-md-3">
-                        <h4 class="mb-2">Primo Incontro</h4>
-                        <p class="text-uppercase mb-2">30 Maggio 2021</p>
-                        <p class="m-0">San Severo</p>
+                    <div class="h-100 d-flex flex-column justify-content-center bg-light p-4 ml-md-3 rounded shadow-sm"> <!-- Cambiato bg-secondary a bg-light, aggiunto rounded e shadow -->
+                        <h4 class="mb-2"><i class="far fa-comments mr-2 text-primary"></i>Primo Incontro</h4> <!-- Icona commenti -->
+                        <p class="text-uppercase mb-2"><i class="far fa-calendar-alt mr-1"></i>30 Maggio 2021</p> <!-- Icona calendario -->
+                        <p class="m-0"><i class="fas fa-map-marker-alt mr-1"></i>San Severo</p> <!-- Icona luogo -->
                     </div>
                 </div>
             </div>
-
-            <div class="row">
-                <div class="col-md-6 text-center text-md-right">
-                    <div class="h-100 d-flex flex-column justify-content-center bg-secondary p-4 mr-md-3">
-                        <h4 class="mb-2">Primo Appuntamento</h4>
-                        <p class="text-uppercase mb-2">01 Giugno 2021</p>
-                        <p class="m-0">Torremaggiore</p>
-                    </div>
+             <!-- Evento 2: Primo Appuntamento -->
+            <div class="row mt-4"> <!-- Aggiunto margine -->
+                <div class="col-md-6 text-center text-md-right order-md-2"> <!-- Invertito ordine colonne su md -->
+                    <!--S <img class="img-fluid ml-md-3 rounded shadow-sm mb-3 mb-md-0" src="img/story-2.jpg" alt="Primo Appuntamento" loading="lazy"> <!-- Aggiunto src, alt, lazy loading, rounded, shadow -->
                 </div>
-                <div class="col-md-6 text-center text-md-left">
-                    <img class="img-fluid ml-md-3" src="img/story-2.jpg" alt="">
-                </div>
-            </div>
-
-            <div class="row">
-                <div class="col-md-6 text-center text-md-right">
-                    <img class="img-fluid mr-md-3" src="img/proposta-matrimonio.jpg" alt="">
-                </div>
-                <div class="col-md-6 text-center text-md-left">
-                    <div class="h-100 d-flex flex-column justify-content-center bg-secondary p-4 ml-md-3">
-                        <h4 class="mb-2">Proposta di Matrimonio</h4>
-                        <p class="text-uppercase mb-2">14 Luglio 2022</p>
-                        <p class="m-0">Parigi</p>
+                <div class="col-md-6 text-center text-md-left order-md-1"> <!-- Invertito ordine colonne su md -->
+                    <div class="h-100 d-flex flex-column justify-content-center bg-light p-4 mr-md-3 rounded shadow-sm"> <!-- Cambiato bg-secondary a bg-light, aggiunto rounded e shadow -->
+                        <h4 class="mb-2"><i class="far fa-calendar-check mr-2 text-primary"></i>Primo Appuntamento</h4> <!-- Icona calendario check -->
+                        <p class="text-uppercase mb-2"><i class="far fa-calendar-alt mr-1"></i>01 Giugno 2021</p> <!-- Icona calendario -->
+                        <p class="m-0"><i class="fas fa-map-marker-alt mr-1"></i>Torremaggiore</p> <!-- Icona luogo -->
                     </div>
                 </div>
             </div>
-
-            <div class="row">
+            <!-- Evento 3: Proposta -->
+             <div class="row mt-4"> <!-- Aggiunto margine -->
                 <div class="col-md-6 text-center text-md-right">
-                    <div class="h-100 d-flex flex-column justify-content-center bg-secondary p-4 mr-md-3">
-                        <h4 class="mb-2">Matrimonio</h4>
-                        <p class="text-uppercase mb-2">14 Giugno 2025</p>
-                        <p class="m-0"></p>
-                    </div>
+                    <!-- <img class="img-fluid mr-md-3 rounded shadow-sm mb-3 mb-md-0" src="img/story-3.jpg" alt="Proposta di Matrimonio" loading="lazy"> <!-- Aggiunto src, alt, lazy loading, rounded, shadow -->
                 </div>
                 <div class="col-md-6 text-center text-md-left">
-                    <img class="img-fluid ml-md-3" src="img/story-4.jpg" alt="">
+                    <div class="h-100 d-flex flex-column justify-content-center bg-light p-4 ml-md-3 rounded shadow-sm"> <!-- Cambiato bg-secondary a bg-light, aggiunto rounded e shadow -->
+                        <h4 class="mb-2"><i class="fas fa-ring mr-2 text-primary"></i>Proposta di Matrimonio</h4> <!-- Icona anello -->
+                        <p class="text-uppercase mb-2"><i class="far fa-calendar-alt mr-1"></i>14 Luglio 2022</p> <!-- Icona calendario -->
+                        <p class="m-0"><i class="fas fa-map-marker-alt mr-1"></i>Parigi</p> <!-- Icona luogo -->
+                    </div>
+                </div>
+            </div>
+            <!-- Evento 4: Matrimonio -->
+            <div class="row mt-4"> <!-- Aggiunto margine -->
+                 <div class="col-md-6 text-center text-md-right order-md-2"> <!-- Invertito ordine colonne su md -->
+                    
+                </div>
+                <div class="col-md-6 text-center text-md-left order-md-1"> <!-- Invertito ordine colonne su md -->
+                    <div class="h-100 d-flex flex-column justify-content-center bg-light p-4 mr-md-3 rounded shadow-sm"> <!-- Cambiato bg-secondary a bg-light, aggiunto rounded e shadow -->
+                        <h4 class="mb-2"><i class="fas fa-church mr-2 text-primary"></i>Matrimonio</h4> <!-- Icona chiesa -->
+                        <p class="text-uppercase mb-2"><i class="far fa-calendar-alt mr-1"></i>14 Giugno 2025</p> <!-- Icona calendario -->
+                        <p class="m-0"><i class="fas fa-map-marker-alt mr-1"></i>San Severo</p> <!-- Icona luogo -->
+                    </div>
                 </div>
             </div>
         </div>
@@ -279,7 +288,8 @@
 </div>
 <!-- Fine Sezione Storia -->
 
-<div class="container-fluid bg-gallery" id="gallery" style="position: relative; padding: 120px 0; margin: 90px 0;">
+<!-- Inizio Sezione Galleria -->
+<div class="container-fluid bg-gallery" id="gallery" style="position: relative; padding: 120px 0; margin: 90px 0; overflow: hidden;">
     <!-- Video Background -->
     <video autoplay loop muted playsinline class="bg-video" 
         style="
@@ -302,7 +312,7 @@
             left: 0;
             width: 100%;
             height: 100%;
-            background-color: rgba(0, 0, 0, 0.3); /* Overlay scuro */
+            background-color: rgba(0, 0, 0, 0.3);
         ">
     </div>
 
@@ -315,146 +325,164 @@
         ">        
     </div>
 
-
     <div class="overlay"></div>
 
     <div class="section-title position-relative text-center" style="margin-bottom: 120px;">
         <h6 class="text-uppercase text-primary mb-3" style="letter-spacing: 3px;">Galleria</h6>
         <h1 class="font-secondary display-4 text-white">La Nostra Galleria Fotografica</h1>
-        <i class="far fa-heart text-white"></i>
+        <i class="far fa-heart text-primary fa-2x mt-2"></i>
     </div>
     
-    <div class="owl-carousel gallery-carousel">
-        <div class="gallery-item">
-            <img class="img-fluid gallery w-75" src="img/gallery-1.jpg" alt="">
+    <div class="owl-carousel gallery-carousel" style="direction: ltr;">
+        <div class="gallery-item text-center">
+            <!-- Aggiunte classi d-block e mx-auto all'immagine -->
+            <img class="img-fluid gallery w-75 d-block mx-auto" src="img/gallery-1.jpg" alt="">
             <a href="img/gallery-1.jpg" data-lightbox="gallery">
                 <i class="fa fa-2x fa-plus text-white"></i>
             </a>
         </div>
-        <div class="gallery-item">
-            <img class="img-fluid gallery w-75" src="img/gallery-2.jpg" alt="">
+        <div class="gallery-item text-center">
+            <!-- Aggiunte classi d-block e mx-auto all'immagine -->
+            <img class="img-fluid gallery w-75 d-block mx-auto" src="img/gallery-2.jpg" alt="">
             <a href="img/gallery-2.jpg" data-lightbox="gallery">
                 <i class="fa fa-2x fa-plus text-white"></i>
             </a>
         </div>
-        <div class="gallery-item">
-            <img class="img-fluid gallery w-75" src="img/gallery-3.jpg" alt="">
+        <div class="gallery-item text-center">
+            <!-- Aggiunte classi d-block e mx-auto all'immagine -->
+            <img class="img-fluid gallery w-75 d-block mx-auto" src="img/gallery-3.jpg" alt="">
             <a href="img/gallery-3.jpg" data-lightbox="gallery">
                 <i class="fa fa-2x fa-plus text-white"></i>
             </a>
         </div>
-        <div class="gallery-item">
-            <img class="img-fluid gallery w-75" src="img/gallery-4.jpg" alt="">
+        <div class="gallery-item text-center">
+            <!-- Aggiunte classi d-block e mx-auto all'immagine -->
+            <img class="img-fluid gallery w-75 d-block mx-auto" src="img/gallery-4.jpg" alt="">
             <a href="img/gallery-4.jpg" data-lightbox="gallery">
                 <i class="fa fa-2x fa-plus text-white"></i>
             </a>
         </div>
-        <div class="gallery-item">
-            <img class="img-fluid gallery w-75" src="img/gallery-5.jpg" alt="">
+        <div class="gallery-item text-center">
+            <!-- Aggiunte classi d-block e mx-auto all'immagine -->
+            <img class="img-fluid gallery w-75 d-block mx-auto" src="img/gallery-5.jpg" alt="">
             <a href="img/gallery-5.jpg" data-lightbox="gallery">
                 <i class="fa fa-2x fa-plus text-white"></i>
             </a>
-        </div>       
-       
+        </div>
     </div>
 </div>
-
 <!-- Fine Sezione Galleria -->
 
 
 
-<!-- Inizio Evento -->
-<div class="container-fluid bg-light py-5" id="evento">
+ <!-- Inizio Evento -->
+ <div class="container-fluid py-5" id="evento"> <!-- Cambiato bg-light a nulla, aggiunto py-5 -->
     <div class="container text-center">
         <!-- Titolo Sezione -->
         <div class="section-title position-relative mb-5">
             <h6 class="text-uppercase text-primary" style="letter-spacing: 3px;">Evento Speciale</h6>
             <h1 class="font-secondary display-4">Il Nostro Matrimonio</h1>
-            <i class="far fa-heart text-dark fa-2x mt-2"></i>
+            <i class="fas fa-calendar-check text-primary fa-2x mt-2"></i> <!-- Icona calendario check -->
         </div>
 
         <div class="row">
-            <!-- Matrimonio -->
-            <div class="col-md-6 border-right border-primary d-flex flex-column align-items-center mb-4 mb-md-0">
-                <h4 class="mb-3">💒 Cerimonia Nuziale</h4>
-                <p class="text-muted"><strong>📍 In Comune</strong></p>
-                <p class="mb-2"><strong>📅 Data:</strong> 14 Giugno 2025</p>
-                <p class="mb-2"><strong>🕕 Orario:</strong> 18:00</p>
-                <p class="mb-2"><strong>📍 Luogo:</strong> Piazza Municipio, San Severo (FG)</p>
-                
-                <!-- Mappa -->
-                <div class="map-container mb-3" style="width:100%; height:200px;">
-                    <iframe 
-                        src="https://maps.google.com/maps?q=Piazza%20Municipio,%2071016%20San%20Severo%20FG&t=&z=15&ie=UTF8&iwloc=&output=embed" 
-                        width="100%" height="100%" style="border:0;" allowfullscreen loading="lazy">
-                    </iframe>
+            <!-- Cerimonia -->
+            <div class="col-md-6 mb-5 mb-md-0"> <!-- Aggiunto mb-5 per spaziatura su mobile -->
+                <div class="card h-100 shadow-sm border-0 rounded-lg">
+                     <div class="card-body d-flex flex-column align-items-center">
+                        <h4 class="mb-3"><i class="fas fa-church mr-2 text-primary"></i>Cerimonia Nuziale</h4>
+                        <p class="text-muted"><strong><i class="fas fa-map-marker-alt mr-1"></i>In Comune</strong></p>
+                        <p class="mb-2"><i class="far fa-calendar-alt mr-1"></i><strong>Data:</strong> 14 Giugno 2025</p>
+                        <p class="mb-2"><i class="far fa-clock mr-1"></i><strong>Orario:</strong> 18:00</p>
+                        <p class="mb-3"><i class="fas fa-map-pin mr-1"></i><strong>Luogo:</strong> Piazza Municipio, San Severo (FG)</p>
+
+                        <!-- Mappa -->
+                        <div class="map-container mb-3 w-100" style="height: 300px;"> <!-- Aumentata altezza -->
+                            <iframe
+                                src=https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2979.580742113148!2d15.37822381114824!3d41.686397271143534!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x133742eaf5a51b53%3A0xccd26576eaa80d57!2sComune%20di%20San%20Severo!5e0!3m2!1sit!2sit!4v1743447723008!5m2!1sit!2sit"
+                                width="100%" height="100%" style="border:0;" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Mappa Ricevimento"> <!-- Aggiunto referrerpolicy e title -->
+                            </iframe>
+                        </div>                      
+
+                        <a href="https://maps.app.goo.gl/t2fwQ1wxopGP6uv89" target="_blank" rel="noopener noreferrer" class="btn btn-primary mt-auto"><i class="fas fa-directions mr-1"></i>Indicazioni Stradali</a> <!-- Aggiunto target blank e icona -->
+                    </div>
                 </div>
-                
-                <a href="https://maps.app.goo.gl/oyrYsWgXeXnFkB2D9" class="btn btn-primary">📍 Vai su Google Maps</a>
             </div>
 
             <!-- Festa di Nozze -->
-            <div class="col-md-6 d-flex flex-column align-items-center">
-                <h4 class="mb-3">🎉 La Festa di Nozze</h4>
-                <p class="text-muted"><strong>📍 Hotel Tenuta Cipriano Ricevimenti</strong></p>
-                <p class="mb-2"><strong>📅 Data:</strong> 14 Giugno 2025</p>
-                <p class="mb-2"><strong>🕖 Orario:</strong> 19:00</p>
-                <p class="mb-2"><strong>📍 Luogo:</strong> SP 30 Torremaggiore - San Severo, Torremaggiore (FG)</p>
+            <div class="col-md-6">
+                 <div class="card h-100 shadow-sm border-0 rounded-lg">
+                     <div class="card-body d-flex flex-column align-items-center">
+                        <h4 class="mb-3"><i class="fas fa-glass-cheers mr-2 text-primary"></i>La Festa di Nozze</h4>
+                        <p class="text-muted"><strong><i class="fas fa-map-marker-alt mr-1"></i>Hotel Tenuta Cipriano</strong></p>
+                        <p class="mb-2"><i class="far fa-calendar-alt mr-1"></i><strong>Data:</strong> 14 Giugno 2025</p>
+                        <p class="mb-2"><i class="far fa-clock mr-1"></i><strong>Orario:</strong> 19:00</p>
+                        <p class="mb-3"><i class="fas fa-map-pin mr-1"></i><strong>Luogo:</strong> SP 30 Torremaggiore - San Severo</p>
 
-                <!-- Mappa -->
-                <div class="map-container mb-3" style="width:100%; height:200px;">
-                    <iframe 
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5959.216934356044!2d15.3125581!3d41.6857986!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1337435843b71f77%3A0x955ed53397a452a2!2sHotel%20Tenuta%20Cipriano%20Ricevimenti%20Eventi%20B%26B!5e0!3m2!1sit!2sit!4v1743433424068!5m2!1sit!2sit" 
-                        width="100%" height="100%" style="border:0;" allowfullscreen loading="lazy">
-                    </iframe>
-                </div>
+                        <!-- Mappa -->
+                        <div class="map-container mb-3 w-100" style="height: 300px;"> <!-- Aumentata altezza -->
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5959.216934356044!2d15.3125581!3d41.6857986!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1337435843b71f77%3A0x955ed53397a452a2!2sHotel%20Tenuta%20Cipriano%20Ricevimenti%20Eventi%20B%26B!5e0!3m2!1sit!2sit!4v1743433424068!5m2!1sit!2sit"
+                                width="100%" height="100%" style="border:0;" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Mappa Ricevimento"> <!-- Aggiunto referrerpolicy e title -->
+                            </iframe>
+                        </div>
 
-                <a href="https://maps.app.goo.gl/9ces3X6Z765rxRnN6" class="btn btn-primary">📍 Vai su Google Maps</a>
-            </div>
-        </div>
-    </div>
-</div>
-<!-- Fine Evento -->
-
-
-
-
-
-<div class="container-fluid py-0" id="rsvp">
-    <div class="container py-0">
-        <div class="section-title position-relative text-center">
-            <h1 class="font-secondary display-4">Unisciti alla nostra festa</h1>
-            <i class="far fa-heart text-dark"></i>
-        </div>
-        <div class="row justify-content-center">
-            <div class="col-12 col-md-10">
-                <div class="text-center">
-                    <div class="embed-responsive" style="height: 1700px;"> <!-- Imposta altezza fissa -->
-                        <iframe
-                            src="https://docs.google.com/forms/d/e/1FAIpQLSeIRMqGbXgdfInIMuPDAzVXFqMpRphWltFdZ3SQ1FxLl8k52Q/viewform?embedded=true"
-                            style="width: 100%; height: 100%; border: none;" 
-                            frameborder="0"
-                            marginheight="0"
-                            marginwidth="0">
-                            Caricamento…
-                        </iframe>
+                        <a href="https://maps.app.goo.gl/9ces3X6Z765rxRnN6" target="_blank" rel="noopener noreferrer" class="btn btn-primary mt-auto"><i class="fas fa-directions mr-1"></i>Indicazioni Stradali</a> <!-- Aggiunto target blank e icona -->
                     </div>
                 </div>
             </div>
         </div>
     </div>
 </div>
+<!-- Fine Evento -->
+
+<!-- Inizio RSVP -->
+<div class="container-fluid py-5 bg-light" id="rsvp"> <!-- Aggiunto bg-light -->
+    <div class="container">
+        <div class="section-title position-relative text-center">
+            <h6 class="text-uppercase text-primary mb-3" style="letter-spacing: 3px;">RSVP</h6>
+            <h1 class="font-secondary display-4">Conferma la tua Presenza</h1>
+            <i class="far fa-heart text-primary fa-2x mt-2"></i>
+        </div>
+            <p class="mt-3 text-center lead">Per favore, facci sapere se ci sarai entro il [Data Scadenza RSVP].</p> <!-- Aggiungi data scadenza -->
+        </div>
+        <div class="row justify-content-center mt-5">
+            <div class="col-12 col-md-10 col-lg-8"> <!-- Ridotta larghezza su schermi grandi -->
+                <div class="text-center shadow-lg rounded" style="overflow: hidden;"> <!-- Aggiunto shadow e rounded -->
+                    <div class="embed-responsive" style="height: 1700px;"> <!-- Ridotta altezza iframe -->
+                        <iframe
+                            src="https://docs.google.com/forms/d/e/1FAIpQLSeIRMqGbXgdfInIMuPDAzVXFqMpRphWltFdZ3SQ1FxLl8k52Q/viewform?embedded=true"
+                            style="width: 100%; height: 100%; border: none;"
+                            frameborder="0"
+                            marginheight="0"
+                            marginwidth="0"
+                            title="Modulo RSVP Matrimonio Matteo e Veronica"
+                            loading="lazy"> <!-- Aggiunto title e lazy loading -->
+                            Caricamento Modulo RSVP…
+                        </iframe>
+                    </div>
+                </div>
+                 <div class="text-center mt-4">
+                    <p>Hai problemi con il modulo? <a href="mailto:tuaemail@example.com?subject=RSVP Matrimonio Matteo e Veronica">Contattaci via email</a>.</p> <!-- Link email alternativo -->
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Fine RSVP -->
 
 
 
-<!-- Footer Inizio -->
-<footer class="container-fluid bg-dark text-white" id="contact" style="margin-top: 90px;">
-    <div class="container text-center py-5">
+ <!-- Footer Inizio -->
+ <footer class="container-fluid bg-dark text-white py-5" id="contact" style="margin-top: 90px;"> <!-- Aggiunto py-5 -->
+    <div class="container text-center">
         <div class="section-title position-relative text-center mb-4">
-            <h1 class="font-secondary display-3 text-white">Grazie </h1>
-            <i class="far fa-heart text-white"></i>
-        </div>  
-        <p class="mt-4">&copy; 2025 - Matteo & Veronica Sposi </p>
+            <h1 class="font-secondary display-3 text-white">Grazie!</h1>
+            <i class="fas fa-heart text-white fa-2x"></i> <!-- Cambiato a fas e fa-2x -->
+        </div>
+         <p class="lead text-white-50">Grazie di cuore per aver visitato il nostro sito. Non vediamo l'ora di festeggiare con voi!</p>
+        <p class="mt-5 mb-0">© <span id="current-year"></span> Matteo & Veronica Sposi. Tutti i diritti riservati.</p>
+        <!-- <p class="small text-white-50">Sito realizzato con <i class="fas fa-heart text-danger"></i> da ... </p> --> <!-- Opzionale: Crediti -->
     </div>
 </footer>
 <!-- Footer Fine -->

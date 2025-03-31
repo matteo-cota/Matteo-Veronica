@@ -9980,4 +9980,37 @@ a.text-dark:hover, a.text-dark:focus {
       width: 300px;
   }
 }
+
+.profile-pic {
+  width: 130px; /* Dimensione immagine */
+  height: 130px;
+  object-fit: cover; /* Assicura che l'immagine copra l'area senza distorsioni */
+  border: 3px solid var(--bs-primary); /* Aggiunge un bordo colorato */
+}
+
+.couple-card {
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.couple-card:hover {
+  transform: translateY(-5px); /* Leggero sollevamento all'hover */
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important; /* Ombra più pronunciata all'hover */
+}
+
+.social-icons .btn-square {
+  width: 40px;
+  height: 40px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  border-radius: 50%; /* Cerchi invece di quadrati, più moderno */
+}
+
+.social-icons .btn-square:hover {
+  background-color: var(--bs-primary);
+  color: white;
+}
+
+
  
